@@ -1,3 +1,4 @@
+<!--FIz alterações====-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,7 +18,7 @@
     <section class="section">
         <h1>Controle seus gastos</h1>
 
-        <div class="ganhos">
+        <div class="form">
             <label for="salary">Quanto você ganha por mês:</label>
             <div class="submit">
                 <input type="text" name="salary" id="salary" value="R$ " class="input">
@@ -26,6 +27,31 @@
             <p class="adicionado" id="salarioAdicionado">ganho adicionado  <img src="images/check mark.svg" alt="verificado"></p>
             
         </div>
+
+
+        <div id="adicioneDespesas">
+
+        <h2>Adicione suas despesas</h2>
+
+            <div class="question">
+                <label for="nomeDespesa">Informe o nome de uma despesa que você possui:</label>
+                <div class="submit">
+                    <input placeholder="Ex: Coxinha" type="text" name="nomeDespesa" id="nomeDespesa" class="input">
+                    <button class="button" id="adicionarNomeDaDespesa">adicionar</button>
+                </div>
+                <p class="adicionado" id="NameOfDespesa">nome de despesa adicionado <img src="images/check mark.svg" alt="verificado"></p>
+            </div>
+
+            <div class="question" id="amountOfDespesas">
+                <label for="amount">Quantas vezes você tem essa despesa por mês:</label>
+                <div class="submit">
+                    <input type="text" class="input" placeholder="Ex: 5">
+                    <button class="button" id="adicionarAmountOfDespesa">adicionar</button>
+                </div>
+                <p class="adicionado" id="quantidadeDeDespesaAdicionado">quantidade de vezes adicionada  <img src="images/check mark.svg" alt="verificado"></p>
+            </div>
+        </div>
+       
     </section>
     
     

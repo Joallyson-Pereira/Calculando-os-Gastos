@@ -25,7 +25,7 @@ body {
     font-family: var(--poppins-font);
 }
 
-.ganhos {
+.form {
     margin-top: 2rem;
 }
 
@@ -79,6 +79,31 @@ body {
 }
 
 .adicionado.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#adicioneDespesas {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 2rem;
+}
+
+#adicioneDespesas.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.question {
+    margin-top: 1.5rem;
+}
+
+#amountOfDespesas {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#amountOfDespesas.show {
     opacity: 1;
     visibility: visible;
 }
