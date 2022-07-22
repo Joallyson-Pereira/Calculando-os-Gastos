@@ -107,3 +107,53 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+#lastQuestion {
+
+    text-align: center;
+}
+
+#lastQuestion div {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.YesorNot {
+    background: var(--button-color);
+    display: block;
+    padding: 1rem;
+    border: 1px solid gray;
+    font-family: var(--mukta-font);
+    font-weight: 700;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+}
+
+
+#yes {
+    background: rgb(0, 204, 102,1);
+}
+
+#yes:hover {
+    background: rgb(0, 204, 102,0.8);
+}
+
+.YesorNot:hover {
+    cursor: pointer;
+
+}
+
+
+#not {
+    background: #ff6666;
+    transition: 0.3s;
+}
+
+#not:hover {
+    background: rgb(255, 102, 102, 0.8);
+}

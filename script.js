@@ -8,6 +8,9 @@ const inputNomeDespesa = document.querySelector('#nomeDespesa')
 const amountOfDespesa = document.querySelector('#amountOfDespesas')
 const botaoAdicionarQuantidade = document.querySelector('#adicionarAmountOfDespesa')
 const amountAdded = document.querySelector('#quantidadeDeDespesaAdicionado')
+const botaoAdicionarvalor = document.querySelector('#adicionarWorthOfDespesa');
+const inputValorDeDespesaAdded = document.querySelector('#valorDeDespesaAdicionado');
+const valor = document.querySelector('#valorDaDespesa');
 
 botaoAdicionar.addEventListener('click', function(){
     adicionado()
@@ -35,7 +38,10 @@ botaoAdicionarQuantidade.addEventListener('click', function(){
 })
 
 function adicionado() {
-    if (inputSalario.value.length < 4) return;
+    if (inputSalario.value.length < 4) {
+        alert('Informe algum valor')
+        return
+    }
     addClassShow(adicionadoSalario)
     addClassShow(divAdicioneDespesas)
 }
@@ -43,3 +49,11 @@ function adicionado() {
 function addClassShow(e) {
     e.classList.add('show')
 }
+
+botaoAdicionarvalor.addEventListener('click', function() {
+    if (valor.value.length < 4) {
+        alert('Informe algum valor')
+        return
+    };
+    addClassShow(inputValorDeDespesaAdded)
+})
