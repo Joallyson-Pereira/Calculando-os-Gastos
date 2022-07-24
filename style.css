@@ -157,3 +157,15 @@ body {
 #not:hover {
     background: rgb(255, 102, 102, 0.8);
 }
+
+#worthOfDespesa,
+#lastQuestion {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#worthOfDespesa.show,
+#lastQuestion.show {
+    opacity: 1;
+    visibility: visible;
+}
