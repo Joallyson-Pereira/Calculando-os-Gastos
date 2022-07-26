@@ -15,7 +15,24 @@ const inputValorDeDespesaAdded = document.querySelector('#valorDeDespesaAdiciona
 const valor = document.querySelector('#valorDaDespesa');
 const lastQuestion = document.querySelector('#lastQuestion');
 const sim = document.querySelector('#yes');
+const botaoNao = document.querySelector('#not')
 
+
+
+//nome das despesas
+let nomes = [];
+
+//valor das despesas
+let valores = [];
+
+
+function adicionaName(nome) {
+    nomes.push(nome);
+}
+
+function adicionaValue(value) {
+    valores.push(value);
+}
 
 sim.addEventListener('click', function() {
     removerShow(lastQuestion);
@@ -48,6 +65,7 @@ botaoAdicionarQuantidade.addEventListener('click', function(){
     }
     addClassShow(amountAdded)
     addClassShow(adicioneValor)
+    
 })
 
 botaoAdicionarNome.addEventListener('click', function(){
@@ -57,6 +75,8 @@ botaoAdicionarNome.addEventListener('click', function(){
     }
     addClassShow(nameOfDespesa)
     addClassShow(amountOfDespesa)
+    adicionaName(inputNomeDespesa.value)
+    console.log(nomes)
 })
 
 /*
@@ -93,4 +113,17 @@ botaoAdicionarvalor.addEventListener('click', function() {
     };
     addClassShow(inputValorDeDespesaAdded)
     addClassShow(lastQuestion)
+    let x = valor.value.replace('R$', '');
+    let despesa = Number(x) * Number(inputQtd.value);
+    adicionaValue(despesa)
+    console.log(despesa);
 })
+
+botaoNao.addEventListener('click', function() {
+    criarTabela();
+
+});
+
+function criarTabela() {
+    console.log('Tá dando certo')
+}
