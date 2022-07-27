@@ -29,11 +29,11 @@
         </div>
 
 
-        <div id="adicioneDespesas">
+        <div id="adicioneDespesas show">
 
         <h2>Adicione suas despesas</h2>
 
-            <div class="question">
+            <div class="question show">
                 <label for="nomeDespesa">Informe o nome de uma despesa que você possui:</label>
                 <div class="submit">
                     <input placeholder="Ex: Coxinha" type="text" name="nomeDespesa" id="nomeDespesa" class="input">
@@ -42,7 +42,7 @@
                 <p class="adicionado" id="NameOfDespesa">nome de despesa adicionado <img src="images/check mark.svg" alt="verificado"></p>
             </div>
 
-            <div class="question" id="amountOfDespesas">
+            <div class="question show" id="amountOfDespesas">
                 <label for="amount">Quantas vezes você tem essa despesa por mês:</label>
                 <div class="submit">
                     <input type="number" class="input" placeholder="Ex: 5" id="qtd">
@@ -51,7 +51,7 @@
                 <p class="adicionado" id="quantidadeDeDespesaAdicionado">quantidade de vezes adicionada  <img src="images/check mark.svg" alt="verificado"></p>
             </div>
 
-            <div class="question" id="worthOfDespesa">
+            <div class="question show" id="worthOfDespesa">
                 <label for="adicionarWorthOfDespesa">Qual o valor unitário dessa despesa?</label>
                 <div class="submit">
                     <input type="text" class="input" value="R$ " id="valorDaDespesa">
@@ -61,15 +61,29 @@
             </div>
 
 
-            <div class="question" id="lastQuestion">
+            <div class="question show" id="lastQuestion">
                 <h3>Deseja adicionar mais alguma despesa?</h3>
 
                 <div>
-                    <button class="YesorNot" id="yes">sim</button>
+                    <button class="YesorNot show" id="yes">sim</button>
                     <button class="YesorNot" id="not">não</button>
                 </div>
             </div>
+            <div class="tables">
+                <table id="nomes">
+                    <tr>
+                      <th>Despesa</th>
+                    </tr>
+                
+                  </table>
 
+                  <table id="valores">
+                    <tr>
+                      <th>Valor gasto</th>
+                    </tr>
+
+                  </table>
+                </div>
         </div>
        
     </section>

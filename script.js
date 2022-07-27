@@ -124,6 +124,25 @@ botaoNao.addEventListener('click', function() {
 
 });
 
+
+
 function criarTabela() {
-    console.log('Tá dando certo')
+    let tabelaNome = document.querySelector('#nomes')
+    let tabelaValores = document.querySelector('#valores')
+
+    for (v of nomes) {
+        let linha = document.createElement('tr');
+        let filhoLinha = document.createElement('td');
+        filhoLinha.innerHTML = v
+        linha.appendChild(filhoLinha);
+        tabelaNome.appendChild(linha)
+
+    }
+    for (val of valores) {
+        let line = document.createElement('tr');
+        let lineSon = document.createElement('td');
+        lineSon.innerHTML = `R$ ${val}`
+        line.appendChild(lineSon);
+        tabelaValores.appendChild(line);
+    }
 }
