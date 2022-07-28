@@ -17,7 +17,8 @@ body {
     background: var(--background-color);
 }
 
-.section {
+.section,
+#tables {
     background: white;
     margin: 1.25rem;
     padding: 1.25rem;
@@ -202,4 +203,20 @@ th {
 tr td:hover {
     background-color: #538cc6;
     cursor: pointer;
+}
+
+.question.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+.escondido {
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
 }

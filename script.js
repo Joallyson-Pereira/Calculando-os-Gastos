@@ -121,9 +121,11 @@ botaoAdicionarvalor.addEventListener('click', function() {
 
 botaoNao.addEventListener('click', function() {
     criarTabela();
-
-});
-
+    goToTable();
+    removerShow(lastQuestion)
+    lastQuestion.classList.add('hidden')
+    document.querySelector('.section').classList.add('escondido')
+})
 
 
 function criarTabela() {
@@ -145,4 +147,23 @@ function criarTabela() {
         line.appendChild(lineSon);
         tabelaValores.appendChild(line);
     }
+}
+
+function goToTable() {
+    let alturaSection = document.querySelector('.section').offsetHeight;
+    let alturaTable = document.querySelector('#tables').offsetHeight;
+    console.log(alturaTable);
+    console.log(alturaSection);
+    window.scroll(0, alturaSection)
+
+    
+    /*
+    const sectionTables = document.querySelector('#tables')
+    const chekpoint = window.pageYOffset + (window.innerHeight) * 4;
+    const sectionTablesTop = sectionTables.offsetTop;
+    const sectionTablesAltura = sectionTables.offsetHeight;
+    const sectionTablesId = sectionTables.getAttribute('id');
+    */ 
+
+
 }
