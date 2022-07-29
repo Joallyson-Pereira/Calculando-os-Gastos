@@ -119,13 +119,33 @@ botaoAdicionarvalor.addEventListener('click', function() {
     console.log(despesa);
 })
 
+const tabela = document.querySelector('#tables')
+
+let sum = 0;
+
+function somarArray() {
+    for (let i =0; i < valores.length; i++) {
+        sum += valores[i]
+    }
+}
+
+
 botaoNao.addEventListener('click', function() {
+    somarArray();
+    addSumToTable();
     criarTabela();
     goToTable();
     removerShow(lastQuestion)
     lastQuestion.classList.add('hidden')
     document.querySelector('.section').classList.add('escondido')
-})
+    addClassShow(tabela)
+});
+
+function addSumToTable() {
+    let result = document.querySelector('#result');
+    result.innerHTML = `R$ ${sum}`
+}
+
 
 
 function criarTabela() {

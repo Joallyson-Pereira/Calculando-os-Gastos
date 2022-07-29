@@ -6,11 +6,11 @@
 
 
 :root{
-    --background-color:   #336699;
+    --background-color:    #009999;
     --poppins-font: 'Poppins', sans-serif;
     --mukta-font: 'Mukta', sans-serif;
-    --button-color:  	 #538cc6;
-    --button-hover: #4080bf;
+    --button-color:    #009999;
+    --button-hover:#00b3b3;
 }
 
 body {
@@ -197,11 +197,11 @@ tr td {
 }
 
 th {
-    background: #336699;
+    background: var(--background-color);
 }
 
 tr td:hover {
-    background-color: #538cc6;
+    background-color:  #e6ffff;
     cursor: pointer;
 }
 
@@ -219,4 +219,23 @@ tr td:hover {
     left: 0;
     visibility: hidden;
     opacity: 0;
+}
+
+
+#tables {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#tables.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+tfoot tr td {
+    background: #ff9999;
+    transition: 0.3s;
+}
+tfoot tr td:hover {
+    background: #ff8080;
 }
