@@ -131,6 +131,7 @@ function somarArray() {
 
 
 botaoNao.addEventListener('click', function() {
+
     somarArray();
     addSumToTable();
     criarTabela();
