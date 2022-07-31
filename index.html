@@ -24,7 +24,7 @@
                 <input type="text" name="salary" id="salary" value="R$ " class="input">
                 <button class="button" id="adicionar">adicionar</button>
             </div>
-            <p class="adicionado" id="salarioAdicionado">ganho adicionado  <img src="images/check mark.svg" alt="verificado"></p>
+            <p class="adicionado" id="salarioAdicionado">ganho adicionado  <img class="v"src="images/check mark.svg" alt="verificado"></p>
             
         </div>
 
@@ -33,13 +33,13 @@
 
         <h2>Adicione suas despesas</h2>
 
-            <div class="question">
+            <div class="questio">
                 <label for="nomeDespesa">Informe o nome de uma despesa que você possui:</label>
                 <div class="submit">
                     <input placeholder="Ex: Coxinha" type="text" name="nomeDespesa" id="nomeDespesa" class="input">
                     <button class="button" id="adicionarNomeDaDespesa">adicionar</button>
                 </div>
-                <p class="adicionado" id="NameOfDespesa">nome de despesa adicionado <img src="images/check mark.svg" alt="verificado"></p>
+                <p class="adicionado" id="NameOfDespesa">nome de despesa adicionado <img class="v" src="images/check mark.svg" alt="verificado"></p>
             </div>
 
             <div class="question" id="amountOfDespesas">
@@ -48,7 +48,7 @@
                     <input type="number" class="input" placeholder="Ex: 5" id="qtd">
                     <button class="button" id="adicionarAmountOfDespesa">adicionar</button>
                 </div>
-                <p class="adicionado" id="quantidadeDeDespesaAdicionado">quantidade de vezes adicionada  <img src="images/check mark.svg" alt="verificado"></p>
+                <p class="adicionado" id="quantidadeDeDespesaAdicionado">quantidade de vezes adicionada  <img src="images/check mark.svg" class="v" alt="verificado"></p>
             </div>
 
             <div class="question" id="worthOfDespesa">
@@ -57,7 +57,7 @@
                     <input type="text" class="input" value="R$ " id="valorDaDespesa">
                     <button class="button" id="adicionarWorthOfDespesa">adicionar</button>
                 </div>
-                <p class="adicionado" id="valorDeDespesaAdicionado">valor adicionado  <img src="images/check mark.svg" alt="verificado"></p>
+                <p class="adicionado" id="valorDeDespesaAdicionado">valor adicionado  <img class="v src="images/check mark.svg" alt="verificado"></p>
             </div>
 
 
@@ -102,7 +102,29 @@
                     </tr>
                 </tfoot>
                 
-            </table>
+            </table>   
+        </div>
+
+        <div id="Final" >
+            <h2>Resultado</h2>
+
+            <table id="tableFinal">
+                <tr class="totalGanho">
+                    <td class="tamanho">Total ganho</td>
+                    <td class="tamanho2" id="solved"></td>
+                </tr>
+
+                <tr class="totalGasto">
+                    <td class="tamanho">Total gasto</td>
+                    <td class="tamanho2" id="despesas"></td>
+                </tr>
+
+                <tr class="resto">
+                    <td class="tamanho">Saldo Final</td>
+                    <td class="tamanho2" id="totalRest"></td>
+                </tr>
+            </table> 
+            
         </div>
         </section>
     

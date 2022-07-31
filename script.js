@@ -139,7 +139,16 @@ botaoNao.addEventListener('click', function() {
     lastQuestion.classList.add('hidden')
     document.querySelector('.section').classList.add('escondido')
     addClassShow(tabela)
+    mostraResltado();
 });
+
+function mostraResltado() {
+    let salary = Number(inputSalario.value.replace('R$', ''));
+    let parag = document.querySelector('#solved');
+    document.querySelector('#despesas').innerHTML = `R$ ${sum}`
+    document.querySelector('#totalRest').innerHTML = `R$ ${salary-sum}`
+    parag.innerHTML = `R$ ${salary}`
+}
 
 function addSumToTable() {
     let result = document.querySelector('#result');
@@ -172,8 +181,6 @@ function criarTabela() {
 function goToTable() {
     let alturaSection = document.querySelector('.section').offsetHeight;
     let alturaTable = document.querySelector('#tables').offsetHeight;
-    console.log(alturaTable);
-    console.log(alturaSection);
     window.scroll(0, alturaSection)
 
     

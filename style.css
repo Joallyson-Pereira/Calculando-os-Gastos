@@ -201,7 +201,6 @@ th {
 }
 
 tr td:hover {
-    background-color:  #e6ffff;
     cursor: pointer;
 }
 
@@ -230,6 +229,7 @@ tr td:hover {
 #tables.show {
     visibility: visible;
     opacity: 1;
+    padding-bottom: 2rem;
 }
 
 tfoot tr td {
@@ -238,4 +238,144 @@ tfoot tr td {
 }
 tfoot tr td:hover {
     background: #ff8080;
+}
+
+#Final {
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#Final h2 {
+    font-size: 1.5rem;
+}
+
+#Final p {
+    margin-top: 1rem;
+}
+
+#tableFinal {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#tableFinal .totalGanho {
+    background: rgb(0, 204, 102, 0.3);
+}
+
+.totalGasto {
+    background: rgb(255, 102, 102, 0.3);
+}
+
+.resto {
+    background: rgb(255, 255, 51, 0.7);
+}
+
+@media (max-width: 980px) {
+    
+    .submit {
+        display: block;
+    }
+
+    .input {
+        display: block;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .input:focus {
+        border: 4px solid var(--background-color);
+    }
+
+    .button {
+        display: block;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding: 2rem;
+        margin-top: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .button:hover{
+        background: var(--button-color);
+        color: #000000;
+    }
+
+    .adicionado {
+        display: block;
+        font-weight: 600;
+        color: var(--background-color);
+        margin-top: 12rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .v {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .adicionado {
+        font-size: 0.825rem;
+    }
+
+    #lastQuestion div {
+        margin: 2rem auto 0 auto;
+        width: 80%;
+    }
+
+    .YesorNot {
+        display: block;
+        font-size: 2rem;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    #adicioneDespesas {
+        margin-top: 10rem;
+    }
+    .section {
+        padding-bottom: 20rem;
+    }
+    label {
+        font-size: 1rem;
+    }
+
+    .questio{
+        margin-top: 3rem;
+    }
+
+    .question {
+        margin-top: 8rem;
+    }
+
+    #nomes {
+        width: 70%;
+    }
+
+    #nomes tr,
+    #valores tr,
+    #tableFinal tr {
+        height: 8rem;
+        font-size: 2rem;
+    }
+    #valores {
+        width: 30%;
+    }
+
+    #tables h1,
+    #Final h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .tamanho {
+        width: 70%;
+    }
+
+    .tamanho2 {
+        width: 30%;
+    }
+
+    
 }
